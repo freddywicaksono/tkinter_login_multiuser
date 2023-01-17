@@ -1,11 +1,13 @@
 # Tkinter Login Multi User
 
-## 1. Instal Tkinter
+# 1. Instal Tkinter & Mysql Connector
 #### pip install tk
+#### pip install mysql-connector-python
 
-## 2. Create New Database MySQL in phpmyadmin
-## 3. Import table users, use file: users.sql
-## 4. Edit file db.py
+# 2. Create New Database MySQL in phpmyadmin
+# 3. Import table users
+#### use file: users.sql
+# 4. Edit file db.py
 #### change the database name
 ![After Login](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/edit_con.jpg)
 
