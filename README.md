@@ -18,14 +18,14 @@
 # After Login
 ![After Login](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/dashboard2.jpg)
 
-Login Admin
+# Login Admin
 #### User : admin
 #### Pass : 123
 
 # Login Manager
-## User : manager
-## Pass : 123
+#### User : manager
+#### Pass : 123
 
 # Login Operator
-## User : operator
-## Pass : 123
+#### User : operator
+#### Pass : 123
