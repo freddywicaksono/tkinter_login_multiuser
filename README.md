@@ -19,8 +19,8 @@
 ![After Login](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/dashboard2.jpg)
 
 # Login Admin
-## User : admin
-## Pass : 123
+##      User : admin
+##      Pass : 123
 
 # Login Manager
 ## User : manager
