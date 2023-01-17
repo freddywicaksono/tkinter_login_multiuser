@@ -21,6 +21,12 @@ class Dashboard:
         self.parent.protocol("WM_DELETE_WINDOW", self.onKeluar)
         self.my_w_child = None
         self.aturKomponen()
+        
+    def new_window( self, number, _class):
+        new = tk.Toplevel()
+        new.transient()
+        new.grab_set()
+        _class(new, number)
        
     def aturKomponen(self):
         mainFrame = Frame(self.parent, bd=10)
