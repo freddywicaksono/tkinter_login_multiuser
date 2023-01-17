@@ -14,14 +14,16 @@
 # Users Table
 ![Users Table](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/tabel_user.jpg)
 
+# 5. Run
+#### python Dashboard.py
+
 # Login Form
 ![Login Form](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/dashboard.jpg)
 
 # After Login
 ![After Login](https://github.com/freddywicaksono/tkinter_login_multiuser/blob/main/dashboard2.jpg)
 
-# 5. Run
-#### python Dashboard.py
+
 
 # Login Admin
 #### User : admin
