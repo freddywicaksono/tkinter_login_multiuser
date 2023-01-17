@@ -34,19 +34,19 @@ class Dashboard:
         
         mainmenu = Menu(self.parent)
         self.parent.config(menu=mainmenu)
-        file_menu1 = Menu(mainmenu)
-        
+        file_menu_awal = Menu(mainmenu)
+        file_menu_awal
         # Menu Awal
-        file_menu1.add_command(
+        file_menu_awal.add_command(
             label='Login', command=self.show_login
         )
-        file_menu1.add_command(
+        file_menu_awal.add_command(
             label='Exit', command=root.destroy
         )
         
         # Tampilkan menu ke layar
         mainmenu.add_cascade(
-            label="File", menu=file_menu1
+            label="File", menu=file_menu_awal
         )
         
         
@@ -226,6 +226,5 @@ class Dashboard:
 
 if __name__ == '__main__':
     root = tk.Tk()
-    my_str = tk.StringVar()
     aplikasi = Dashboard(root, "Dashboard Aplikasi")
     root.mainloop() 
