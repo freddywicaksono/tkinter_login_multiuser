@@ -21,12 +21,6 @@ class Dashboard:
         self.parent.protocol("WM_DELETE_WINDOW", self.onKeluar)
         self.my_w_child = None
         self.aturKomponen()
-        
-    def new_window( self, number, _class):
-        new = tk.Toplevel()
-        new.transient()
-        new.grab_set()
-        _class(new, number)
        
     def aturKomponen(self):
         mainFrame = Frame(self.parent, bd=10)
@@ -34,19 +28,19 @@ class Dashboard:
         
         mainmenu = Menu(self.parent)
         self.parent.config(menu=mainmenu)
-        file_menu_awal = Menu(mainmenu)
-        file_menu_awal
+        file_menu1 = Menu(mainmenu)
+        
         # Menu Awal
-        file_menu_awal.add_command(
+        file_menu1.add_command(
             label='Login', command=self.show_login
         )
-        file_menu_awal.add_command(
+        file_menu1.add_command(
             label='Exit', command=root.destroy
         )
         
         # Tampilkan menu ke layar
         mainmenu.add_cascade(
-            label="File", menu=file_menu_awal
+            label="File", menu=file_menu1
         )
         
         
@@ -197,7 +191,9 @@ class Dashboard:
         p = self.txtPassword.get()
         A = Users()
         B =[]
-        B = A.Login(u,p)
+        A.username = u
+        A.password = p
+        B = A.Login()
         
         if(B[0]=='True'):           
             if(B[1]=='admin'):
@@ -226,5 +222,6 @@ class Dashboard:
 
 if __name__ == '__main__':
     root = tk.Tk()
+    my_str = tk.StringVar()
     aplikasi = Dashboard(root, "Dashboard Aplikasi")
     root.mainloop() 
